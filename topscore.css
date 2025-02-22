@@ -32,12 +32,12 @@
   flex: 1 0;
 }
 
-.center .score.leftpanel {
+.center .score.leftteam {
   text-align: right;
   color: azure;
 }
 
-.center .score.rightpanel {
+.center .score.rightteam {
   text-align: left;
   color: azure;
 }
@@ -48,15 +48,14 @@
   color: bisque;
 }
 
-.left {
+.leftpanel {
   flex: 1 0;
-  background-color: green;
-  background-blend-mode: soft-light;
+  background-color: #00ff0080;
 }
 
-.right {
+.rightpanel {
   flex: 1 0;
-  background-color: brown;
+  background-color: #ff000080;
 }
 
 .team {
@@ -95,5 +94,4 @@
 }
 .item.i4 {
   background-image: url("./assets/i4.png");
-  background-blend-mode: screen;
 }
