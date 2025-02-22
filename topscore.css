@@ -1,0 +1,99 @@
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topscore {
+  background-color: aliceblue;
+
+  flex: 0 0 110px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.center {
+  flex: 0 0 230px;
+  background-color: cornflowerblue;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.center .score {
+  flex: 1 0;
+}
+
+.center .score.leftpanel {
+  text-align: right;
+  color: azure;
+}
+
+.center .score.rightpanel {
+  text-align: left;
+  color: azure;
+}
+
+.center .divider {
+  flex: 0 0 32px;
+  text-align: center;
+  color: bisque;
+}
+
+.left {
+  flex: 1 0;
+  background-color: green;
+  background-blend-mode: soft-light;
+}
+
+.right {
+  flex: 1 0;
+  background-color: brown;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  height: 55px;
+}
+
+.team.left {
+  margin-right: 20px;
+  justify-content: right;
+}
+
+.team.right {
+  margin-left: 20px;
+  justify-content: left;
+}
+
+.item {
+  flex: 0 0 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.item.i1 {
+  background-image: url("./assets/i1.png");
+}
+.item.i2 {
+  background-image: url("./assets/i2.png");
+}
+.item.i3 {
+  background-image: url("./assets/i3.png");
+}
+.item.i4 {
+  background-image: url("./assets/i4.png");
+  background-blend-mode: screen;
+}
