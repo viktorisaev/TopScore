@@ -6,6 +6,7 @@
   font-size: 48px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: goldenrod;
 }
 
 .topscore {
@@ -94,4 +95,58 @@
 }
 .item.i4 {
   background-image: url("./assets/i4.png");
+}
+
+.panel {
+  margin: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.fademein {
+  animation-name: fadeinanim;
+  animation-duration: 2s;
+}
+
+@keyframes fadeinanim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.brightend {
+  animation-name: brightAnim;
+  animation-duration: 3.3s;
+  animation-fill-mode: forwards;
+}
+
+.hiddenByOpacity {
+  opacity: 0;
+}
+
+.hiddenByVisibility {
+  visibility: hidden;
+}
+
+.someText {
+  color: darkgoldenrod;
+}
+
+@keyframes brightAnim {
+  0% {
+    filter: brightness(600%);
+    visibility: initial;
+  }
+  10% {
+    filter: brightness(100%);
+  }
+  100% {
+    visibility: hidden;
+  }
 }
